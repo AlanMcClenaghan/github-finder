@@ -15,8 +15,8 @@ class GitHub {
     const profileResponse = await fetch(`https://api.github.com/users/${user}?client_id=${this.client_id}&client_secret=${this.client_secret}`);
 
     /* If no Github credentials are available,
-    the following code can be use to test the app.
-    GitHub limits the number of rquests 
+    the following code can be used to test the app.
+    However, GitHub limits the number of requests 
     and rate at which requests can be made. */
     // const profileResponse = await fetch(`https://api.github.com/users/${user}`);
 
