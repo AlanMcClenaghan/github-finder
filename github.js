@@ -23,7 +23,7 @@ class GitHub {
     However, GitHub limits the number of requests 
     and rate at which requests can be made. */
     // const profileResponse = await fetch(`https://api.github.com/users/${user}`);
-    // const reposResponse = await fetch(`https://api.github.com/users/${user}/repos?per_page=${this.repos_count}&sort=${this.repos_sort}`);
+    // const reposResponse = await fetch(`https://api.github.com/users/${user}/repos?per_page=${this.repos_count}&sort=${this.repos_sort};
 
     const profile = await profileResponse.json();
     const repos = await reposResponse.json();
